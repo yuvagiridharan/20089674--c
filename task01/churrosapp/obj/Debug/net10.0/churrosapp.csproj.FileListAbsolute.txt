@@ -1,0 +1,15 @@
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/bin/Debug/net10.0/churrosapp
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/bin/Debug/net10.0/churrosapp.deps.json
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/bin/Debug/net10.0/churrosapp.runtimeconfig.json
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/bin/Debug/net10.0/churrosapp.dll
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/bin/Debug/net10.0/churrosapp.pdb
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/churrosapp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/churrosapp.AssemblyInfoInputs.cache
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/churrosapp.AssemblyInfo.cs
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/churrosapp.csproj.CoreCompileInputs.cache
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/churrosapp.sourcelink.json
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/churrosapp.dll
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/refint/churrosapp.dll
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/churrosapp.pdb
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/churrosapp.genruntimeconfig.cache
+/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/Debug/net10.0/ref/churrosapp.dll

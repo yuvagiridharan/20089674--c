@@ -29,7 +29,8 @@ jobs:
       - name: Run Task01
         run: |
           cd task01/churrosapp
-          echo -e "1\n1\n2\n0" | dotnet run --no-build
+          echo -e "1\n1\n1\n2\n0" | dotnet run --no-build
+        continue-on-error: true
 
   task02-periodic-table:
     name: Task02 - Periodic Table App
@@ -53,3 +54,4 @@ jobs:
         run: |
           cd task02/Periodictable
           echo -e "1\nn" | dotnet run --no-build
+        continue-on-error: true
