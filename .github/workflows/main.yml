@@ -1,0 +1,55 @@
+name: Build and Test All Tasks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  task01-churros:
+    name: Task01 - Churros Truck App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore Task01
+        run: dotnet restore task01/churrosapp/churrosapp.csproj
+
+      - name: Build Task01
+        run: dotnet build task01/churrosapp/churrosapp.csproj --no-restore
+
+      - name: Run Task01
+        run: |
+          cd task01/churrosapp
+          echo -e "1\n1\n2\n0" | dotnet run --no-build
+
+  task02-periodic-table:
+    name: Task02 - Periodic Table App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore Task02
+        run: dotnet restore task02/Periodictable/Periodictable.csproj
+
+      - name: Build Task02
+        run: dotnet build task02/Periodictable/Periodictable.csproj --no-restore
+
+      - name: Run Task02
+        run: |
+          cd task02/Periodictable
+          echo -e "1\nn" | dotnet run --no-build
