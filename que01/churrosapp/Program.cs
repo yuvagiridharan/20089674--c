@@ -23,9 +23,16 @@ namespace ChurrosTruck
 
         // ─────────────────────────────────────────────────────────────────────
         static void Main(string[] args)
-        {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
-            bool running = true;
+{
+    // Run unit tests first
+    OrderTests.RunAllTests();
+
+    Console.WriteLine();
+    Console.Write("  Press any key to start the app...");
+    Console.ReadKey(true);
+
+    Console.OutputEncoding = System.Text.Encoding.UTF8;
+    bool running = true;
 
             while (running)
             {
