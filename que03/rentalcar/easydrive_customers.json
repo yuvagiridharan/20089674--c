@@ -1,1 +1,3 @@
-{"customers": {"1": {"name": "yuva", "address": "A96 H103", "pps_number": "1234567A", "driving_license": "ASEKFN", "registration_number": "D95D8681-611", "registered_at": "2026-04-04T19:46:57"}, "2": {"name": "Yuvagiri", "address": "A86 H34", "pps_number": "1234567B", "driving_license": "3NDOENFR4", "registration_number": "9F603048-4BF", "registered_at": "2026-04-05T00:33:03"}}}
+{"customers": {"1": {"name": "yuva", "address": "A96 H103", "pps_number": "1234567A", "driving_license": "ASEKFN", "registration_number": "D95D8681-611", "registered_at": "2026-04-04T19:46:57"}, 
+"2": {"name": "Yuvagiri", "address": "A86 H34", "pps_number": "1234567B", "driving_license": "3NDOENFR4", "registration_number": "9F603048-4BF", "registered_at": "2026-04-05T00:33:03"}, 
+"3": {"name": "Sam", "address": "H12 G23", "pps_number": "0987654R", "driving_license": "TEZSX132", "registration_number": "FBF18DB4-773", "registered_at": "2026-04-05T00:47:28"}}}
