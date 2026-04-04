@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/churrosapp.csproj": {}
+    "/Users/yuvagiridharan/Documents/20089674/que01/churrosapp/churrosapp.csproj": {}
   },
   "projects": {
-    "/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/churrosapp.csproj": {
+    "/Users/yuvagiridharan/Documents/20089674/que01/churrosapp/churrosapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/churrosapp.csproj",
+        "projectUniqueName": "/Users/yuvagiridharan/Documents/20089674/que01/churrosapp/churrosapp.csproj",
         "projectName": "churrosapp",
-        "projectPath": "/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/churrosapp.csproj",
+        "projectPath": "/Users/yuvagiridharan/Documents/20089674/que01/churrosapp/churrosapp.csproj",
         "packagesPath": "/Users/yuvagiridharan/.nuget/packages/",
-        "outputPath": "/Users/yuvagiridharan/Documents/20089674/task01/churrosapp/obj/",
+        "outputPath": "/Users/yuvagiridharan/Documents/20089674/que01/churrosapp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/yuvagiridharan/.nuget/NuGet/NuGet.Config"
