@@ -68,53 +68,21 @@ def validate_name(value: str) -> bool | str:
 
 
 def validate_address(value: str) -> bool | str:
-    """Validate that an address is not too short to be meaningful.
-
-    Parameters
-    ----------
-    value : str
-        The raw address string entered by the user.
-
-    Returns
-    -------
-    bool | str
-        ``True`` if valid, or an error message string if invalid.
-    """
+    
     if len(value.strip()) < 5:
         return "Address must be at least 5 characters"
     return True
 
 
 def validate_license(value: str) -> bool | str:
-    """Validate that a driving licence field is not blank.
-
-    Parameters
-    ----------
-    value : str
-        The raw licence string entered by the user.
-
-    Returns
-    -------
-    bool | str
-        ``True`` if valid, or an error message string if invalid.
-    """
+    
     if not value.strip():
         return "Driving licence number cannot be empty"
     return True
 
 #Input collection and display functions
 def collect_customer_info() -> dict:
-    """Interactively collect all required EasyDrive registration fields.
-
-    Uses questionary for interactive prompts with inline validation so
-    the user sees errors immediately without re-entering all fields.
-
-    Returns
-    -------
-    dict
-        A dictionary with keys ``name``, ``address``, ``pps_number``, and
-        ``driving_license``, ready to be serialised and sent to the server.
-    """
+    
     console.print(
         Panel(
             Text("EasyDrive Car Rental", justify="center", style="bold white"),
@@ -164,17 +132,7 @@ def collect_customer_info() -> dict:
 
 
 def show_summary(customer_data: dict) -> None:
-    """Display a formatted table of the collected registration details.
-
-    Parameters
-    ----------
-    customer_data : dict
-        The customer information dict from :func:`collect_customer_info`.
-
-    Returns
-    -------
-    None
-    """
+    
     table = Table(
         title="Registration Summary",
         box=box.SIMPLE_HEAVY,
@@ -200,25 +158,7 @@ def show_summary(customer_data: dict) -> None:
 
 #Network communication functions
 def send_registration(customer_data: dict) -> dict:
-    """Open a TCP connection to the server and transmit the registration data.
-
-    Parameters
-    ----------
-    customer_data : dict
-        The customer information dict from :func:`collect_customer_info`.
-
-    Returns
-    -------
-    dict
-        The parsed JSON response from the server.
-
-    Raises
-    ------
-    ConnectionRefusedError
-        If the server is not reachable at ``HOST:PORT``.
-    TimeoutError
-        If the connection or data transfer times out.
-    """
+  
     payload: bytes = json.dumps(customer_data).encode("utf-8")
 
     with console.status(f"  Connecting to server {HOST}:{PORT} ...", spinner="dots"):
@@ -232,17 +172,7 @@ def send_registration(customer_data: dict) -> dict:
 
 
 def display_response(response: dict) -> None:
-    """Print the server response in a formatted panel.
-
-    Parameters
-    ----------
-    response : dict
-        The parsed response dict from :func:`send_registration`.
-
-    Returns
-    -------
-    None
-    """
+ 
     console.print()
     if response.get("status") == "success":
         reg_no = response.get("registration_number", "N/A")
